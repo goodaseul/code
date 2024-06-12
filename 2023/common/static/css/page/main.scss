@@ -1,0 +1,47 @@
+//공통  style.scss 가져오기
+@import "../style.scss";
+
+/* ANIMATION */
+@keyframes bgScale {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes loadTxt {
+    from {
+        bottom: -10px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+@keyframes loadBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 240px;
+    }
+}
+
+/* ANIMATION */
+
+//필요한 bg 부분에 넣기
+// $bgs: (why_bg, why_bg_02, why_bg_03, why_bg_04);
+// @each $bg in $bgs {
+//     $i: index($bgs, $bg);
+//     &:nth-child(#{$i}) {
+//         &::before {
+//             background: url("#{$url-images}/main/#{$bg}.jpg") no-repeat 0 0 / cover;
+//         }
+//     }
+// }
+
+.l_main {
+    width: 100%;
+    min-width: $min-width;
+}

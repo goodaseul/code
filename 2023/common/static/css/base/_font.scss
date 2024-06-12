@@ -1,0 +1,48 @@
+$fontlink: "/static/fonts/NotoSansKr/NotoSansKr-";
+/* notosansKr-100 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 100;
+    src: local(""), url("#{$fontlink}Thin.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}Thin.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Thin.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* notosansKr-300 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("#{$fontlink}Light.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}Light.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Light.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* notosansKr-400 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("#{$fontlink}Regular.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}Regular.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* notosansKr-500 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url("#{$fontlink}Medium.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* notosansKr-700 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("#{$fontlink}Bold.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}Bold.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* notosansKr-800 */
+@font-face {
+    font-family: "NotoSansKr";
+    font-style: normal;
+    font-weight: 800;
+    src: local(""), url("#{$fontlink}Black.woff2") format("woff2"), /* Super Modern Browsers */ url("#{$fontlink}Black.woff") format("woff"), /* Modern Browsers */ url("#{$fontlink}Black.ttf") format("truetype"); /* Safari, Android, iOS */
+}

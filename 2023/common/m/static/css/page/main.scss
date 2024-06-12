@@ -1,0 +1,32 @@
+@import "../style.scss";
+/* ANIMATION */
+@keyframes bgScale {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes loadTxt {
+    from {
+        bottom: vw(-10px);
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+@keyframes loadBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: vw(365px);
+    }
+}
+/* ANIMATION */
+
+.l_main {
+    width: 100%;
+}

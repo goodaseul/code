@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>haksan_effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="/commonCode/static/css/ui/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/commonCode/static/css/haksan.css">
+</head>
+
+<body>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+        </div>
+    </main>
+    <script src="/commonCode/static/js/plugin/swiper-bundle.min.js"></script>
+    <script>
+        let ww = window.innerWidth;
+        let swiper;
+
+        responsiveSwiper();
+
+        function initSwiper(effect) {
+            if (typeof (swiper) == 'object') swiper.destroy();
+
+            return swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                grabCursor: true,
+                effect: effect,
+                parallax: true,
+                mousewheel: true,
+                speed: 1000,
+                creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: ["-10%", 0, -1],
+                    },
+                    next: {
+                        translate: ["100%", 0, 0],
+                    },
+                },
+            });
+        }
+
+        function responsiveSwiper() {
+            if (ww >= 1200) {
+                initSwiper('creative');
+            } else if (ww < 1200) {
+                initSwiper('slide');
+            }
+        }
+        window.addEventListener('resize', function () {
+            ww = window.innerWidth;
+            responsiveSwiper();
+        }, true);
+
+    </script>
+</body>
+
+</html>

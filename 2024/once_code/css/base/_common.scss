@@ -1,0 +1,188 @@
+$url-images: "/static/images/";
+
+#skipNav {
+    position: absolute;
+    width: 100%;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+
+        &:focus,
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
+
+//공통
+body {
+    overflow-y: initial;
+    &.m_open {
+        overflow-y: hidden !important;
+    }
+}
+
+.pc_cont {
+    display: block;
+}
+
+.mo_cont {
+    display: none;
+}
+
+.section {
+    position: relative;
+}
+.btn {
+    margin: 80px auto 0;
+    height: 56px;
+    padding: 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #222;
+    transition: all 0.2s;
+    border-radius: 2vw;
+    &_block {
+        background-color: #ddd;
+        pointer-events: none;
+        color: #333;
+    }
+    // &:hover {
+    //     background-color: $point;
+    // }
+}
+
+.marquee {
+    position: absolute;
+    left: 0;
+    top: 57%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    .txt {
+        height: 760px;
+        background-image: url(#{$url-images}main/marquee_img.png);
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        text-indent: -9999%;
+    }
+}
+
+@media screen and(min-width: 1440px) {
+    $inner: 1440px;
+
+    body {
+        font-size: 20px;
+        &.fix {
+            header {
+                top: 0 !important;
+            }
+        }
+        &.scrollDown {
+            header {
+                top: -100px;
+            }
+        }
+    }
+
+    .inner {
+        padding: 0 20px;
+        width: $inner;
+        margin: 0 auto;
+    }
+}
+
+@function rem($size) {
+    @return floor($size / 16px * 1rem / 3 * 1000) / 1000;
+}
+
+@media screen and (max-width: 1440px) {
+    $inner: auto;
+    $inner-space: rem(80px);
+
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: rem(48px);
+        &.fix {
+            header {
+                top: 0 !important;
+            }
+        }
+        &.scrollDown {
+            header {
+                top: rem(-200px);
+            }
+        }
+    }
+    .pc_cont {
+        display: none !important;
+    }
+
+    .mo_cont {
+        display: block !important;
+    }
+
+    .inner {
+        width: $inner;
+        padding: 0 $inner-space;
+    }
+    .btn {
+        margin: rem(145px) auto 0;
+        height: rem(150px);
+        padding: 0 rem(100px);
+        font-size: rem(48px);
+        border-radius: 5rem;
+    }
+    .marquee {
+        top: 57%;
+        transform: translateY(-50%);
+        .txt {
+            height: rem(1520px);
+        }
+    }
+}
+
+//rem
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 14px;
+    }
+}

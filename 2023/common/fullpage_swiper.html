@@ -1,0 +1,1625 @@
+<!-- <? require_once $_SERVER["DOCUMENT_ROOT"]."/inc/head.php"; ?>
+<? require_once $_SERVER["DOCUMENT_ROOT"]."/inc/meta.php"; ?>
+<? require_once $_SERVER["DOCUMENT_ROOT"]."/inc/resource.php"; ?> -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 모바일의 경우 maximum-scale 표기 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+
+
+    <title>fullpage_swiper</title>
+    <!-- .빼기 -->
+    <link rel="stylesheet" href="./static/css/ui/fullpage.css">
+    <link rel="stylesheet" href="./static/css/ui/swiper.min.css">
+
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!--script-->
+    <script src="./static/js/plugin/jquery-1.12.4.min.js"></script>
+    <script src="./static/js/plugin/jquery.fullpage.js"></script>
+    <script src="./static/js/plugin/swiper.min.js"></script>
+
+
+    <!-- 페이지별 css 연결 -->
+    <link rel="stylesheet" href="./static/css/page/main.css">
+    <!-- 페이지별 js 연결 -->
+</head>
+
+<body class="main_body" style="">
+    <div class="wrapper main">
+
+        <div id="fullpage" class="fullpage-wrap">
+            <section class="section" id="section1">
+                <div class="gallery_view js-section1_swiper" style="">
+                    <div class="gallery_container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide slide-0">
+                                <div class="bg-area">
+                                    <div class="st_bg only-pc"></div>
+                                    <div class="st_bg only-mb"></div>
+                                </div>
+                                <div class="typo-area">
+                                    <div class="copy-box">
+                                        <div class="sub_text">Drive the World</div>
+                                        <div class="main_text">with Green <br class="only-mb" /> Innovation</div>
+                                    </div>
+                                    <div class="more_link">
+                                        <a href="/company/overview" target="_blank" class="js-cursor_event">
+                                            <span>Read more</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-1">
+                                <div class="bg-area">
+                                    <div class="st_bg only-pc"></div>
+                                    <div class="st_bg only-mb"></div>
+                                </div>
+                                <div class="typo-area">
+                                    <div class="copy-box">
+                                        <div class="sub_text">Create Happy Future</div>
+                                        <div class="main_text">with Global <br class="only-mb" /> Friends</div>
+                                    </div>
+                                    <div class="more_link">
+                                        <a href="/company/global#america" target="_blank" class="js-cursor_event">
+                                            <span>Read more</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-2">
+                                <div class="bg-area">
+                                    <div class="st_bg only-pc"></div>
+                                    <div class="st_bg only-mb"></div>
+                                </div>
+                                <div class="typo-area">
+                                    <div class="copy-box">
+                                        <div class="sub_text">Grow Together</div>
+                                        <div class="main_text">with Society</div>
+                                    </div>
+                                    <div class="more_link">
+                                        <a href="/sustainability" target="_blank" class="js-cursor_event">
+                                            <span>Read more</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="prev">Prev</a>
+                        <a href="#" class="next">Next</a>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+
+                            <li><i class="circle" id="circle_1"></i>
+                                <span>01</span>
+                            </li>
+                            <li><i class="circle" id="circle_2"></i>
+                                <span>02</span>
+                            </li>
+                            <li><i class="circle" id="circle_3"></i>
+                                <span>03</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="scroll_motion-area">
+                        <div class="area-inner">
+                            <div class="mouse">
+                            </div>
+                            <div class="arrow">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section" id="section2">
+                <div class="section-inner">
+                    <div class="section_layout rowflex flexwrap">
+                        <div class="s2_left col col-mb-ep1">
+                            <div class="typo-area">
+                                <div class="title">
+                                    <span>Carbon </span>
+                                    <em>to Green</em>
+                                </div>
+                                <div class="desc">
+                                    <span>
+                                        차별적 탈/저탄소 전략을 수립, 친환경 기술을<br class="only-mb" /> 확보하고 <br class="only-pc" />
+                                        사업화해 Net Zero를 달성하겠습니다.
+                                    </span>
+                                </div>
+                                <ul class="green-list">
+                                    <li>
+                                        <a href="#" class="js-s2_click1 js-cursor_event">
+                                            <div class="">
+                                                <em>GREEN ANCHORING</em>
+                                                <br />
+                                                <!-- [2022-1024] 텍스트 변경 //-->
+                                                <span>Carbon에서 Green으로</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="js-s2_click2 js-cursor_event">
+                                            <div class="">
+                                                <em>GREEN TRANSFORMATION</em>
+                                                <br />
+                                                <!-- [2022-1024] 텍스트 변경 //-->
+                                                <span>Carbon을 Green으로</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more_link">
+                                    <a href="/sustainability/low-carbon-rnd" class="js-cursor_event">
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s2_right col col-mb-ep1">
+                            <div class="view-area js-s2_content">
+                                <button class="s2_close">
+                                    <i></i>
+                                </button>
+                                <div class="copy_typo-box typo1">
+                                    <div class="box-inner rowflex jcc">
+                                        <div class="title">
+                                            <em>GREEN</em>
+                                            <span>ANCHORING</span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>전기차 배터리를 ‘Anchor’로 삼아
+                                                <br class="only-pc" /><br class="only-mb" />
+                                                리튬이온배터리분리(LiBS), <br class="only-mb" />
+                                                배터리 소재, BMR 등 <br class="only-pc" /><br class="only-mb" />
+                                                그린 사업을 확장해 나가겠습니다.
+                                            </span>
+                                        </div>
+                                        <div class="more_link">
+                                            <a href="/sustainability/low-carbon-rnd" class="js-cursor_event">
+                                                <span>Read more</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="copy_typo-box typo2">
+                                    <div class="box-inner rowflex jcc">
+                                        <div class="title">
+                                            <em>GREEN</em>
+                                            <br class="only-mb" />
+                                            <!-- [2022-1130] 띄어쓰기 수정 // -->
+                                            <span>TRANS<br class="only-mb" />FORMATION</span>
+                                        </div>
+                                        <div class="desc">
+                                            <span>
+                                                기존 사업 분야에 탄소 감축 제품
+                                                <br class="only-pc" /><br class="only-mb" />
+                                                생산 확대와 폐기물 재활용 활성화 등을
+                                                <br class="only-pc" /><br class="only-mb" />
+                                                통한 순환경제 실현하겠습니다.
+                                            </span>
+                                        </div>
+                                        <div class="more_link">
+                                            <a href="/sustainability/scope-1" class="js-cursor_event">
+                                                <span>Read more</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section" id="section3">
+                <div class="gallery_view js-section3_swiper" style="width:100%; height:100%">
+                    <!-- [2022-1209] js-s3_touch 추가 // -->
+                    <div class="gallery_container js-s3_touch">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide slide-0">
+                                <div class="content-area">
+                                    <!-- [2022-1025] 수정 -->
+                                    <a href="/sustainability/green-portfolio">
+                                        <div class="copy-box">
+                                            <div class="main_text color-e">ENVIRONMENT</div>
+                                            <div class="desc_text">
+                                                Carbon to Green 변화 방향성을 기반으로 친환경 중심의 포트폴리오와 <br class="only-pc" />
+                                                비즈니스 모델 혁신을 가속하고 있습니다. 이를 기반으로 친환경에 대한 사회의 요구를 충족시키며, <br
+                                                    class="only-pc" />
+                                                새로운 가치 창출의 기회로 적극 활용하겠습니다.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- // [2022-1012] 수정 -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-1">
+                                <div class="content-area">
+                                    <!-- [2022-1012] 수정 -->
+                                    <a href="/sustainability/esg-risk-management">
+                                        <div class="copy-box">
+                                            <div class="main_text color-s">SOCIAL</div>
+                                            <div class="desc_text">
+                                                구성원 및 주주, 협력회사 등 SK이노베이션을 둘러싼 다양한 이해관계자의 행복을 확대하고, <br
+                                                    class="only-pc" />
+                                                우리 사회 전반에 ESG 중심의 문화가 확산/구축될 수 있도록 노력하겠습니다.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- //[2022-1012] 수정 -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-2">
+                                <div class="content-area">
+                                    <!-- [2022-1012] 수정 -->
+                                    <a href="/esg/governance">
+                                        <div class="copy-box">
+                                            <div class="main_text color-g">GOVERNANCE</div>
+                                            <div class="desc_text">
+                                                투명하고 선진화된 Governance 체계를 구축하고 실질적 이사회 중심 경영을 통해 <br class="only-pc" />
+                                                이해관계자의 기대수준에 부합하는 Governance 혁신을 지속해 나가겠습니다.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- // [2022-1012] 수정 -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="page-box"></div>
+                        <div class="link-box">
+                            <div class="report_link">
+                                <a href="/esg/sr_01" class="js-cursor_event">
+                                    <span>ESG Report</span>
+                                    <i></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="section4">
+                <div id="s4_animation">
+                    <canvas id="s4_canvas" width="1920" height="1080"
+                        style="position: absolute; display: block;"></canvas>
+                    <div id="dom_overlay_container"
+                        style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;">
+                    </div>
+                </div>
+                <div class="s4_con-wrap js-s4_touch">
+
+                    <!-- [2022-1012] -->
+                    <div class="section_layout rowflex flexwrap">
+                        <div class="col-auto">
+                            <div class="typo-wrap">
+                                <div class="area-head">
+                                    <div class="title">
+                                        <!-- [2022-1006] 수정 // -->
+                                        <span>SK Innovation <br />
+                                            Subsidiary
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="area-body">
+                                    <ul class="subsidiary-list js-subsidiary">
+                                        <li data-turn="0" class="active">
+                                            <a href="#" title="SK에너지">
+                                                <span>SK에너지</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="45">
+                                            <a href="#" title="SK지오센트릭">
+                                                <span>SK지오센트릭</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="90">
+                                            <a href="#" title="SK온">
+                                                <span>SK온</span>
+                                            </a>
+                                        </li>
+                                        <!-- [2022-1201*] 자회사명 변경 (SK루브리컨츠 >  SK엔무브), (SK lubricants > SK enmove) //-->
+                                        <li data-turn="135">
+                                            <a href="#" title="SK엔무브">
+                                                <span>SK엔무브</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="180">
+                                            <a href="#" title="SK인천석유화학">
+                                                <span>SK인천석유화학</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="225">
+                                            <a href="#" title="SK트레이딩인터내셔널">
+                                                <span>SK트레이딩인터내셔널</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="270">
+                                            <a href="#" title="SK아이이테크놀로지">
+                                                <span>SK아이이테크놀로지</span>
+                                            </a>
+                                        </li>
+                                        <li data-turn="315">
+                                            <a href="#" title="SK어스온">
+                                                <span>SK어스온</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+
+                            <div class="earth-wrap">
+
+                                <div class="scope-area">
+                                    <div class="scope-inner">
+
+                                        <!-- [2022-1122]  -->
+                                        <div class="scope js-scope">
+                                            <div class="item" style="--i:0;">
+                                                <a href="http://www.skenergy.com/" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK에너지</span>
+                                                        <span class="desc">지구와 소통하고 인정받는 <br class="only-pc" /> 세계적인 친환경
+                                                            에너지 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-1"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:1;">
+                                                <a href="http://www.skgeocentric.com/" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK지오센트릭</span>
+                                                        <span class="desc">지구중심적인 생각으로 <br>Green for better life를 <br>
+                                                            실현해 나가는 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-2"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:2;">
+                                                <a href="http://www.sk-on.com/" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK온</span>
+                                                        <span class="desc">배터리 사업으로 깨끗하고 편리한 <br class="only-pc">
+                                                            세상을 만드는 글로벌 선두 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-3"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:3;">
+                                                <a href="http://www.sklubricants.com/" target="_blank">
+                                                    <div class="typo-box">
+                                                        <!-- [2022-1201*] 자회사명 변경 (SK루브리컨츠 >  SK엔무브), (SK lubricants > SK enmove) //-->
+                                                        <span class="title">SK엔무브</span>
+                                                        <span class="desc">미래를 향한 움직임을 만드는 <br class="only-pc">
+                                                            ‘Energy Saving Company’
+                                                        </span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-4"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:4;">
+                                                <a href="http://www.skincheonpetrochem.com/" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK인천석유화학</span>
+                                                        <span class="desc">친환경 에너지로 대한민국 에너지<br class="only-pc" />공급의
+                                                            중추를 담당하는 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-5"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:5;">
+                                                <a href="/company/trading" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK트레이딩인터내셔널</span>
+                                                        <span class="desc">원유 및 석유제품 <br>
+                                                            트레이딩 전문No.1 <br>
+                                                            Global Trading Company
+                                                        </span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-6"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:6;">
+                                                <a href="http://www.skietechnology.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK아이이테크놀로지</span>
+                                                        <span class="desc">차별적 기술 경쟁력을 지닌<br class="only-pc" /> 글로벌
+                                                            Top-tier 소재 솔루션 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-7"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:7;">
+                                                <!-- [2022-1012] 수정 -->
+                                                <a href="http://www.skearthon.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK어스온</span>
+                                                        <span class="desc">전문성과 핵심 기술 역량을 <br>바탕으로 자원 개발의 경계를<br>확장해
+                                                            나갑니다.</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-8"></i>
+                                                    </div>
+                                                </a>
+                                                <!-- // [2022-1012] 수정 -->
+                                            </div>
+                                        </div>
+
+                                        <div class="scope scope_copy js-scope_copy">
+                                            <div class="item" style="--i:1;">
+                                                <a href="http://www.skenergy.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK에너지</span>
+                                                        <span class="desc">지구중심적인 생각으로 <br>
+                                                            Green for better life를 <br>
+                                                            실현해 나가는 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-1"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:2;">
+                                                <a href="http://www.skgeocentric.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK지오센트릭</span>
+                                                        <span class="desc">지구중심적인 생각으로 <br>Green for better life를 <br>
+                                                            실현해 나가는 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-2"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:3;">
+                                                <a href="http://www.sk-on.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK온</span>
+                                                        <span class="desc">배터리 사업으로 깨끗하고 편리한 <br class="only-pc">
+                                                            세상을 만드는 글로벌 선두 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-3"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:4;">
+                                                <a href="http://www.sklubricants.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <!-- [2022-1201*] 자회사명 변경 (SK루브리컨츠 >  SK엔무브), (SK lubricants > SK enmove) //-->
+                                                        <span class="title">SK엔무브</span>
+                                                        <span class="desc">미래를 향한 움직임을 만드는 <br class="only-pc">
+                                                            ‘Energy Saving Company’
+                                                        </span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-4"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:5;">
+                                                <a href="http://www.skincheonpetrochem.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK인천석유화학</span>
+                                                        <span class="desc">친환경 에너지로 대한민국 에너지<br class="only-pc" />공급의
+                                                            중추를 담당하는 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-5"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:6;">
+                                                <a href="/company/trading" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK트레이딩인터내셔널</span>
+                                                        <span class="desc">원유 및 석유제품 <br>
+                                                            트레이딩 전문No.1 <br>
+                                                            Global Trading Company
+                                                        </span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-6"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:7;">
+                                                <a href="http://www.skietechnology.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK아이이테크놀로지</span>
+                                                        <span class="desc">차별적 기술 경쟁력을 지닌 <br class="only-pc" /> 글로벌
+                                                            Top-tier 소재 솔루션 기업</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-7"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item" style="--i:0;">
+                                                <a href="http://www.skearthon.com" target="_blank">
+                                                    <div class="typo-box">
+                                                        <span class="title">SK어스온</span>
+                                                        <span class="desc">전문성과 핵심 기술 역량을 <br>바탕으로 자원 개발의 경계를<br>확장해
+                                                            나갑니다.</span>
+                                                    </div>
+                                                    <div class="icon-box">
+                                                        <i class="link"></i>
+                                                        <i class="icon s4-icon-8"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- // [2022-1122]  -->
+
+                                        <div class="btn-box">
+                                            <button class="btn-prev js-earth_prev">◀</button>
+                                            <button class="btn-next js-earth_next">▶</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // [2022-1012] -->
+
+                </div>
+            </section>
+
+
+            <section class="section" id="section5">
+                <div class="section-inner">
+
+                    <div class="full_scroll">
+                        <div class="notice-panel">
+                            <div class="p-inner">
+                                <div class="p-head">
+                                    <div class="title">
+                                        <span>Latest</span>&nbsp;
+                                        <em>News</em>
+                                    </div>
+                                    <div class="more-box">
+                                        <a href="https://skinnonews.com/" target="_blank" class="js-cursor_event">
+                                            <span>보도자료</span>
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-body">
+
+
+                                    <div class="gallery_view js-s5_gallery_view">
+                                        <div class="gallery_container">
+
+                                            <ul class="news-list rowflex flexwrap padding-x swiper-wrapper">
+
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://skinnonews.com/archives/103160"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>프레스센터</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://skinnonews.com/archives/103160"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        SK에너지∙네이버∙한진, 중소상공인 부담 더는 ‘더(The) 착한택배’ 개시
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://skinnonews.com/archives/103092"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>프레스센터</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://skinnonews.com/archives/103092"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        SK이노베이션 노사, 구성원 안전과 행복 증진에 한뜻… 61년 만에 근무제도 변경 및
+                                                                        ‘23년 임금협상 완전 타결
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://skinnonews.com/archives/103145"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>기업뉴스</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://skinnonews.com/archives/103145"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        SK이노베이션, 2년 연속 글로벌 ESG 평가기관 CDP로부터 탄소경영 섹터 아너스
+                                                                        에너지 & 유틸리티 부문 수상
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://skinnonews.com/archives/103044"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>사회적가치뉴스</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://skinnonews.com/archives/103044"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        SK이노베이션 울산Complex, 저소득층 꿈나무 장학금 1억5천만원 전달
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://skinnonews.com/archives/category/%ea%b2%bd%ec%98%81%ec%a7%84-%ec%8b%a0%eb%85%84-%ec%9d%b8%ed%84%b0%eb%b7%b0"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>기업뉴스</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://skinnonews.com/archives/category/%ea%b2%bd%ec%98%81%ec%a7%84-%ec%8b%a0%eb%85%84-%ec%9d%b8%ed%84%b0%eb%b7%b0"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        새로운 60년의 시작, SK이노베이션 계열 경영진을 만나다 – 신년 맞이 인터뷰
+                                                                        모아보기
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col-ep3 swiper-slide">
+                                                    <div class="li-inner">
+                                                        <div class="img-area">
+                                                            <!-- [2022-1012] 수정 -->
+                                                            <div class="img-ratio">
+                                                                <a href="https://www.youtube.com/watch?v=2yGz8kj1pT8"
+                                                                    target="_blank" class="js-cursor_event_main">
+                                                                </a>
+                                                            </div>
+                                                            <!-- //[2022-1012] 수정 -->
+                                                        </div>
+                                                        <div class="typo-area">
+                                                            <div class="category">
+                                                                <span>Youtube</span>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <a href="https://www.youtube.com/watch?v=2yGz8kj1pT8"
+                                                                    target="_blank">
+                                                                    <span>
+                                                                        SK온의 이름을 세계에 밝히다! 수출진흥유공포상 산업부 장관 표창 수상 - SK온
+                                                                        손기철 PL
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+                                        <div class="pagination-box">
+                                            <div class="pagination"></div>
+                                            <div class="pagination_bar">
+                                                <i></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_scroll_top">
+                        <a href="#secton1" title="scroll top">
+                            <i class="icon-scroll_top"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- fp-auto-height -->
+            <section class="section fp-auto-height" id="section6">
+
+
+
+
+                <footer id="footer">
+                    <section class="footer-section">
+                        <div class="section-wrap">
+                            <div class="footer-panel">
+                            </div>
+                        </div>
+                    </section>
+                </footer>
+
+
+
+                <div class="global_cursor js-cursor"></div>
+            </section>
+
+        </div>
+        <!-- //container -->
+    </div>
+
+
+    <script>
+        /* ----- Swiper ----- */
+        var _section1_swiperTime = 700;
+        var _section1_swiper = new Swiper('.js-section1_swiper .gallery_container', {
+            slidesPerView: 1,
+            effect: "fade",
+            speed: _section1_swiperTime,
+            loop: true,
+            threshold: 20, // 드래그 거리 이상일대 적용
+            navigation: {
+                prevEl: '.js-section1_swiper .prev',
+                nextEl: '.js-section1_swiper .next',
+            },
+            on: {
+                init: function () {
+                    /* do something */
+                },
+                slideChange: function () {
+                    /* 슬라이드 바뀌면 실행 */
+                    if (_section1_swiper) {
+                        section1_set(_section1_swiper.realIndex);
+                    }
+                },
+                transitionEnd: function () { // 움직임이 끝나면 실행
+                },
+            }
+        });
+        $(".js-section1_swiper .pagination li").on("click", function () {
+            var _index = $(this).index();
+            section1_set(_index);
+        });
+
+        var section1_page = ".js-section1_swiper .pagination li";
+        var section1_itme = ".js-section1_swiper .swiper-wrapper .swiper-slide"
+
+
+        function section1_next() {
+            // _trpCounter.next();
+            // _trpTimeCounter.play();
+            _section1_swiper.slideNext();
+
+            $(".js-section1_swiper .pagination li").removeClass("active");
+            $(".js-section1_swiper .pagination li").eq(_trpCounter.getTC().index).addClass("active");
+            $(section1_itme).removeClass("slide-active");
+            $(section1_itme + ".swiper-slide-active").addClass("slide-active");
+        }
+
+        function section1_reset() {
+            $(".js-section1_swiper .pagination li").removeClass("active");
+            $(".js-section1_swiper .pagination li").eq(0).addClass("active");
+            $(section1_itme).removeClass("slide-active");
+        }
+
+        function section1_start() {
+            _section1_swiper.slideTo(1, 0);
+            // _trpTimeCounter.play();
+
+            $(section1_page).removeClass("active");
+            $(section1_page).eq(0).addClass("active");
+            $(section1_itme).removeClass("slide-active");
+            $(section1_itme + ".swiper-slide-active").eq(0).addClass("slide-active");
+        }
+        // _trpTimeCounter.play();
+    </script>
+
+    <!-- section2 script -->
+    <script>
+        $("html").on("mouseenter click focus", ".is_pc .js-s2_click1", function ($e) {
+            if (!$(".js-s2_content").hasClass("active")) {
+                s2ContentCloseFN();
+                $(".js-s2_content").addClass("active click1");
+            }
+        });
+        $("html").on("mouseenter click focus", ".is_pc .js-s2_click2", function ($e) {
+            if (!$(".js-s2_content").hasClass("active")) {
+                s2ContentCloseFN();
+                $(".js-s2_content").addClass("active click2");
+            }
+        });
+        $("html").on("mouseleave", ".is_pc .js-s2_content", function () {
+            s2ContentCloseFN();
+        });
+
+        $("html").on("click", ".is_mb .js-s2_click1", function ($e) {
+            s2ContentCloseFN();
+            $(".js-s2_content").addClass("active click1");
+        });
+        $("html").on("click", ".is_mb .js-s2_click2", function ($e) {
+            s2ContentCloseFN();
+            $(".js-s2_content").addClass("active click2");
+        });
+        $(".js-s2_content .s2_close").on("click", function () {
+            s2ContentCloseFN();
+        });
+
+
+        function s2ContentCloseFN() {
+            $(".js-s2_content").removeClass("active click1 click2");
+        }
+
+        function section2_reset() {
+            s2ContentCloseFN();
+        }
+
+        function section2_start() { }
+        s2ContentCloseFN();
+    </script>
+
+    <!-- section3 script -->
+    <script>
+        /* ----- Swiper ----- */
+        var _section3_swiperTime = 1000;
+        var _section3_index_old = -1;
+        var _section3_swiper = new Swiper('.js-section3_swiper .gallery_container', {
+            slidesPerView: 1,
+            effect: "fade",
+            speed: _section3_swiperTime,
+            loop: false, // activeIndex , realIndex
+            threshold: 20, // 드래그 거리 이상일대 적용
+            //allowTouchMove: false,
+            navigation: {
+                prevEl: '.js-section2_swiper .prev',
+                nextEl: '.js-section2_swiper .next',
+            },
+            pagination: {
+                el: '.page-box',
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    var txtArr = ["E", "S", "G"];
+                    return '<span class="' + className + '">' + txtArr[index] + '</span>';
+                },
+                renderCustom: function (swiper, current, total) {
+                    return current + ' of ' + total;
+                }
+            },
+            on: {
+                init: function () {
+                    /* do something */
+                },
+                slideChange: function () {
+                    /* 슬라이드 바뀌면 실행 */
+                    if (_section3_swiper) {
+                        $(".js-section3_swiper .slide-0").removeClass("com_first");
+                        section3_set(_section3_swiper.activeIndex);
+                    }
+                },
+                transitionEnd: function () { // 움직임이 끝나면 실행
+                    /* console.log("움직임 끝"); */
+                },
+            }
+        });
+        $(".js-section3_swiper .pagination li").on("click", function () {
+            var _index = $(this).index();
+            section3_set(_index);
+        });
+
+        /* ----- wheel event ----- */
+        var _section3_conTimeOut = null;
+        var _section3_conOnes = true;
+        $('.js-section3_swiper').on('mousewheel DOMMouseScroll', function (e) {
+            var E = e.originalEvent;
+            var delta = 0;
+            if (E.detail) {
+                delta = E.detail * -40;
+            } else {
+                delta = E.wheelDelta;
+            }
+            if (delta < 0) { // wheel down
+                //Next
+                section3_next();
+            } else { // wheel up
+                // Prev
+                section3_prev();
+            }
+        });
+        /* ----- touch event ----- */
+
+        var s3_startY, s3_endY;
+        /* [2022-1209] */
+        $(".js-s3_touch").on('touchstart', function (event) {
+            s3_startY = event.originalEvent.changedTouches[0].clientY;
+        });
+        $(".js-s3_touch").on('touchmove', function (event) {
+            s3_endY = event.originalEvent.changedTouches[0].clientY;
+            if (s3_startY - s3_endY > 50) { // down to up (NEXT)
+                section3_next();
+            } else if (s3_endY - s3_startY > 50) { // up to down (PREV)
+                section3_prev();
+            }
+        });
+        /* // [2022-1209] */
+
+
+
+
+
+
+        function section3_next() {
+            if (_section3_swiper.activeIndex >= 2) {
+                if (_section3_conOnes) {
+                    _section3_conOnes = false;
+                    $.fn.fullpage.moveSectionDown(); // mainPage
+                }
+                section3_TimeOut();
+            } else {
+                if (_section3_conOnes) {
+                    _section3_conOnes = false;
+                    _section3_swiper.slideNext();
+                }
+                section3_TimeOut();
+            }
+        }
+
+        function section3_prev() {
+            if (_section3_swiper.activeIndex == 0) {
+                if (_section3_conOnes) {
+                    _section3_conOnes = false;
+                    $.fn.fullpage.moveSectionUp();
+                }
+                section3_TimeOut();
+            } else {
+                if (_section3_conOnes) {
+                    _section3_conOnes = false;
+                    _section3_swiper.slidePrev();
+                }
+                section3_TimeOut();
+            }
+        }
+
+        function section3_TimeOut() {
+            clearTimeout(_section3_conTimeOut);
+            _section3_conTimeOut = setTimeout(function () {
+                _section3_conOnes = true;
+                clearTimeout(_section3_conTimeOut);
+            }, 300);
+        }
+
+        function section3_set($index) {
+            $(".js-section3_swiper .gallery_container").removeClass("active0 active1 active2");
+            $(".js-section3_swiper .gallery_container").addClass("active" + $index);
+
+            $(".js-section3_swiper .swiper-slide").removeClass("com_next com_prev");
+            if (_section3_index_old < $index) {
+                $(".js-section3_swiper .swiper-slide").eq($index).addClass("com_next");
+            }
+            if (_section3_index_old > $index) {
+                $(".js-section3_swiper .swiper-slide").eq($index).addClass("com_prev");
+            }
+            _section3_index_old = $index;
+        }
+
+        function section3_reset() {
+            $(".js-section3_swiper .swiper-wrapper").removeClass("com_first");
+        }
+
+        function section3_start() {
+            $(".js-section3_swiper .swiper-wrapper").addClass("com_first");
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    </script>
+    <script>
+        var s4_index = 0;
+        var copy_timeOut = "";
+        $(".js-subsidiary li a").on("click", function ($e) {
+            var _index = $(this).parent().index();
+            s4_index = _index;
+            rotationYfn(_index);
+        });
+        $(".js-earth_prev").on("click", function ($e) {
+            earth_prev();
+        });
+        $(".js-earth_next").on("click", function ($e) {
+            earth_next()
+        });
+
+        function earth_prev() {
+            if (_section4_conOnes) {
+                _section4_conOnes = false;
+                s4_index--;
+                if (s4_index == -1) {
+                    s4_index = 7;
+                    $(".js-scope").addClass("stop");
+                    $(".js-earth").addClass("stop");
+                    $(".js-scope").css({
+                        "transform": "perspective(800px)" + "rotateY(-360deg)"
+                    });
+                    $(".js-earth").css({
+                        "transform": "rotateY(360deg)"
+                    });
+                    setTimeout(function () {
+                        $(".js-scope").removeClass("stop");
+                        $(".js-earth").removeClass("stop");
+                    }, 50);
+                }
+                setTimeout(function () {
+                    rotationYfn(s4_index);
+                }, 100);
+            }
+            section4_TimeOut();
+        }
+
+        function earth_next() {
+            if (_section4_conOnes) {
+                _section4_conOnes = false;
+                s4_index++;
+                if (s4_index == 8) {
+                    s4_index = 0;
+                    $(".js-scope").addClass("stop");
+                    $(".js-earth").addClass("stop");
+                    $(".js-scope").css({
+                        "transform": "perspective(800px)" + "rotateY(45deg)"
+                    });
+                    $(".js-earth").css({
+                        "transform": "rotateY(-45deg)"
+                    });
+                    setTimeout(function () {
+                        $(".js-scope").removeClass("stop");
+                        $(".js-earth").removeClass("stop");
+                    }, 50);
+                }
+                setTimeout(function () {
+                    rotationYfn(s4_index);
+                }, 100);
+            }
+            section4_TimeOut();
+        }
+
+        function rotationYfn($index) {
+            var s4_root_deg = $(".js-subsidiary li").eq($index).data("turn") * -1;
+            var s4_root_deg_copy = s4_root_deg - 45;
+            var _perspective = "";
+            $(".js-scope").show();
+            $(".js-scope_copy").hide();
+
+            $(".js-subsidiary li").removeClass("active");
+            $(".js-subsidiary li").eq($index).addClass("active");
+
+            $(".js-scope").css({
+                "transform": "perspective(800px)" + "rotateY(" + s4_root_deg + "deg)"
+            });
+            $(".js-earth").css({
+                "transform": "rotateY(" + (s4_root_deg * -1) + "deg)"
+            });
+            $(".js-scope_copy").css({
+                "transform": "perspective(800px)" + "rotateY(" + s4_root_deg_copy + "deg)"
+            });
+            $(".js-earth_copy").css({
+                "transform": "rotateY(" + (s4_root_deg_copy * -1) + "deg)"
+            });
+
+            var tar = $(".js-subsidiary li").eq($index).position().left;
+            var scrollX = (tar - ($(".js-subsidiary").parents(".area-body").width() / 2) + $(".js-subsidiary li").eq($index).width() / 2);
+            $(".js-subsidiary").parents(".area-body").animate({
+                scrollLeft: scrollX
+            }, 200);
+
+
+            if (copy_timeOut != "") {
+                clearTimeout(copy_timeOut);
+            }
+            copy_timeOut = setTimeout(function ($e) {
+                if (s4_index == 2 || s4_index == 6) {
+                    $(".js-scope").hide();
+                    $(".js-scope_copy").show();
+                }
+            }, 310);
+
+        }
+
+        /* ----- wheel event ----- */
+        var _section4_conTimeOut = null;
+        var _section4_conOnes = true;
+        $(".js-s4_touch").on('mousewheel DOMMouseScroll', function (e) {
+            var E = e.originalEvent;
+            var delta = 0;
+            if (E.detail) {
+                delta = E.detail * -40;
+            } else {
+                delta = E.wheelDelta;
+            }
+            if (delta < 0) { // wheel down
+                //Next
+                section4_next();
+            } else { // wheel up
+                // Prev
+                section4_prev();
+            }
+        });
+
+        /* ----- touch event ----- */
+        var s4_startY, s4_endY;
+        var s4_startX, s4_endX;
+        $(".js-s4_touch").on('touchstart', function (event) {
+            s4_startY = event.originalEvent.changedTouches[0].clientY;
+        });
+        $(".js-s4_touch").on('touchmove', function (event) {
+            s4_endY = event.originalEvent.changedTouches[0].clientY;
+            if (s4_startY - s4_endY > 30) { // down to up (NEXT)
+                section4_next();
+            } else if (s4_endY - s4_startY > 30) { // up to down (PREV)
+                //console.log( "s4_endY-s4_startY : ",  s4_endY-s4_startY )
+                section4_prev();
+            }
+        });
+
+        /* 아이템 회전 */
+        $(".js-s4_touch .earth-wrap").on('touchstart dragstart', function (event) {
+            if (event.pageX) {
+                s4_startX = event.pageX;
+            }
+            if (event.originalEvent.changedTouches != undefined) {
+                s4_startX = event.originalEvent.changedTouches[0].clientX;
+            }
+            //console.log("s4_startX", s4_startX);
+        });
+        $(".js-s4_touch .earth-wrap").on('touchmove drag', function (event) {
+            if (event.pageX) {
+                s4_endX = event.pageX;
+            }
+            if (event.originalEvent.changedTouches != undefined) {
+                s4_endX = event.originalEvent.changedTouches[0].clientX;
+            }
+            //console.log("s4_endX", s4_endX);
+            if (s4_startX - s4_endX > 30) { // down to up (NEXT)
+                earth_next();
+            } else if (s4_endX - s4_startX > 30) { // up to down (PREV)
+                earth_prev();
+            }
+        });
+
+
+        function section4_next() {
+            if (_section4_conOnes) {
+                _section4_conOnes = false;
+                $.fn.fullpage.moveSectionDown(); // mainPage
+            }
+            section4_TimeOut();
+        }
+
+        function section4_prev() {
+            if (_section4_conOnes) {
+                _section4_conOnes = false;
+                $.fn.fullpage.moveSectionUp();
+            }
+            section4_TimeOut();
+        }
+
+        function section4_TimeOut() {
+            clearTimeout(_section4_conTimeOut);
+            _section4_conTimeOut = setTimeout(function () {
+                _section4_conOnes = true;
+                clearTimeout(_section4_conTimeOut);
+            }, 300);
+        }
+
+        function section4_reset() {
+            setTimeout(function () {
+                s4_index = 0;
+                rotationYfn(s4_index);
+            }, 350);
+        }
+
+        function section4_start() {
+            ///$.fn.fullpage.setAutoScrolling(true);
+        }
+    </script>
+    <!-- // [2022-1012] 수정 -->
+
+    <!-- section5 script -->
+    <script>
+        var _s5_index = 0;
+        var _s5_total = 0;
+        var _option = {
+            slidesPerView: "auto",
+            loop: false,
+            spaceBetween: 0,
+            threshold: 20, // 드래그 거리 이상일대 적용
+            pagination: {
+                el: '.js-s5_gallery_view .pagination',
+                type: "fraction",
+                formatFractionCurrent: function (number) {
+                    _s5_index = number;
+                    return ('0' + number).slice(-2);
+                },
+                formatFractionTotal: function (number) {
+                    _s5_total = number;
+                    var num = _s5_index;
+                    var per = (num / _s5_total) * 100;
+                    $(".js-s5_gallery_view .pagination_bar i").css({
+                        width: per + "%"
+                    });
+                    return ('0' + number).slice(-2);
+                },
+                renderFraction: function ($currentClass, $totalClass) {
+                    return '<span class="' + $currentClass + '"></span>' +
+                        '<i> / </i> ' +
+                        '<span class="' + $totalClass + '"></span>';
+                },
+
+            },
+            paginationClickable: true,
+            on: {
+                init: function () {
+                    /* do something */
+                },
+                transitionStart: function () { // 움직임이 끝나면 실행
+                },
+                transitionEnd: function () { // 움직임이 끝나면 실행
+                    //console.log("움직임 끝");
+                },
+            }
+        };
+        var _section5_swiper = "";
+        ///console.log( (_section5_swiper)? "ok" : "no" );
+        function swiper_set() {
+            if ($("body").hasClass("is_mb")) {
+                if (!_section5_swiper) {
+                    _section5_swiper = new Swiper('.js-s5_gallery_view .gallery_container', _option);
+                    _section5_swiper.update();
+                } else {
+                    _section5_swiper.update();
+                }
+            } else {
+                if (_section5_swiper) {
+                    _section5_swiper.destroy(true, true);
+                    _section5_swiper = "";
+                }
+            }
+        }
+        $(window).on("resize", function () {
+            swiper_set();
+        });
+        $(function () {
+            swiper_set();
+        });
+
+        var _s5_settime;
+        var s5_per = 0;
+        /* scroll event- */
+        $("#section5 .full_scroll").on("scroll", function ($e) {
+            s5_per = Math.floor(($("#section5 .full_scroll").scrollTop() / ($("#section5 .full_scroll").prop("scrollHeight") - $("#section5 .full_scroll").prop("clientHeight"))) * 100);
+            if (s5_per == 0) {
+                clearTimeout(_s5_settime);
+                _s5_settime = setTimeout(function () {
+                    if (s5_per == 0) {
+                        $("#section5 .full_scroll").addClass("scroll_up");
+                    }
+                }, 400);
+            } else if (s5_per == 100) {
+                clearTimeout(_s5_settime);
+                _s5_settime = setTimeout(function () {
+                    if (s5_per == 100) {
+                        $("#section5 .full_scroll").addClass("scroll_down");
+                    }
+                }, 400);
+            } else {
+                $("#section5 .full_scroll").removeClass("scroll_up scroll_down");
+            }
+
+        });
+
+        /* ----- wheel event ----- */
+        var _section5_conTimeOut = null;
+        var _section5_conOnes = true;
+        $("#section5 .full_scroll").on('wheel', function (e) {
+            //console.log(e.originalEvent.deltaY)
+            var E = e.originalEvent;
+            var delta = 0;
+            if (E.detail) {
+                delta = E.detail * -40;
+            } else {
+                delta = E.wheelDelta;
+            }
+            if (delta < 0) { // wheel down
+                //Next
+                if ($("#section5 .full_scroll").hasClass("scroll_down")) {
+                    section5_next();
+                }
+            } else { // wheel up
+                // Prev
+                if ($("#section5 .full_scroll").hasClass("scroll_up")) {
+                    section5_prev();
+                }
+            }
+        });
+
+        /* ----- touch event ----- */
+        var s5_startY, s5_endY;
+        $("#section5 .full_scroll").on('touchStart', function (event) {
+            s5_startY = event.touches[0].pageY;
+        });
+        $("#section5 .full_scroll").on('touchMove', function (event) {
+            s5_endY = event.touches[0].pageY;
+            if (s5_startY - s5_endY > 30) { // down to up (NEXT)
+                section5_next();
+            } else if (s5_endY - s5_startY > 30) { // up to down (PREV)
+                section5_prev();
+            }
+        });
+
+
+        /* [2022-1007] 추가 cursor event */
+        $(".js-cursor_event_main").mousemove(function (event) {
+            var _top = $(this).offset().top;
+            var _left = $(this).offset().left;
+            $(this).find(".js-cursor_main").css({
+                left: (event.clientX - _left),
+                top: (event.clientY - _top)
+            });
+        });
+
+
+
+        function section5_next() {
+            if (_section5_conOnes) {
+                _section5_conOnes = false;
+                $.fn.fullpage.moveSectionDown();
+            }
+        }
+
+        function section5_prev() {
+            if (_section5_conOnes) {
+                _section5_conOnes = false;
+                $.fn.fullpage.moveSectionUp();
+            }
+        }
+
+        function section5_TimeOut() {
+            clearTimeout(_section5_conTimeOut);
+            _section5_conTimeOut = setTimeout(function () {
+                _section5_conOnes = true;
+                clearTimeout(_section5_conTimeOut);
+            }, 300);
+        }
+
+        function section5_reset() {
+            _section5_conOnes = true;
+            $("#section5 .full_scroll").removeClass("scroll_up scroll_down");
+            $("#section5").removeClass("active_section");
+        }
+
+        function section5_start() {
+            _section5_conOnes = true;
+            $("#section5").addClass("active_section");
+        }
+    </script>
+
+    <!-- section6 footer script [2022-1216] // -->
+    <script>
+        function section6_reset() {
+            //$.fn.fullpage.setAutoScrolling(false);  // 자동스넵
+            //$.fn.fullpage.fitToSection(false);      // 페이지넘김
+        }
+
+        function section6_start() {
+            //$.fn.fullpage.setAutoScrolling(false);
+            //$.fn.fullpage.fitToSection(false);
+        }
+    </script>
+
+
+    <!-- fullpage -->
+    <script>
+        $(function () {
+
+            var _pageMain = 0;
+            var _pageSub = 0;
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                anchors: ['secton1', 'secton2', 'secton3', 'secton4', 'secton5'],
+                sectionsColor: ['#fff', '#fff', '#ddefc8', '#fff', '#fff'],
+                //autoScrolling: false,
+                navigation: true,
+                navigationPosition: 'right',
+                slidesNavigation: true,
+                fitToSectionDelay: 0,
+                fitToSection: false,
+                scrollingSpeed: 800,
+                responsiveHeight: 480,
+                css3: false,
+                // ** 페이지를 불러온 후
+                afterLoad: function (anchorLink, index, direction, trigger) {
+                    if (index == 1) {
+                        $.fn.fullpage.setAllowScrolling(true);
+                        section1_start();
+                    }
+                    if (index == 2) {
+                        $.fn.fullpage.setAllowScrolling(true);
+                        //$.fn.fullpage.silentMoveTo(2,0);
+                        //$.fn.fullpage.moveTo(2,0);
+                        //$.fn.fullpage.setAllowScrolling(false);
+                    }
+                    if (index == 3) {
+                        $.fn.fullpage.setAllowScrolling(false);
+                        section3_start();
+                    }
+                    if (index == 4) {
+                        $.fn.fullpage.setAllowScrolling(false);
+                        section4_start();
+                    }
+                    if (index == 5) {
+                        if ($("body").hasClass("is_pc")) {
+                            $.fn.fullpage.setAllowScrolling(false);
+                        } else {
+                            $.fn.fullpage.setAllowScrolling(true);
+                        }
+                        section5_start();
+                    }
+                    if (index == 6) {
+                        $.fn.fullpage.setAllowScrolling(true);
+                        section6_start();
+                    }
+
+                },
+                // ** 페이지를 떠날때
+                onLeave: function (index, nextIndex, direction) {
+                    if (index == 1 && direction == 'down') {
+                        //console.log("onLeave: index 1 - down");
+                        section1_reset();
+                    } else if (index == 2 && direction == 'up') {
+                        //console.log("onLeave: index 2 >1 - up");
+                    } else if (index == 2 && direction == 'down') {
+                        //console.log("onLeave: index 2 >3 - donw");
+                    } else if (index == 3 && direction == 'up') {
+                        //console.log("onLeave: index 3 >2 - up");
+                        section3_reset();
+                    } else if (index == 3 && direction == 'down') {
+                        //console.log("onLeave: index 3 >4 - down");
+                        section3_reset();
+                    } else if (index == 4 && direction == 'up') {
+                        //console.log("onLeave: index 4 >3 - up");
+                        section4_reset();
+                    } else if (index == 4 && direction == 'down') {
+                        //console.log("onLeave: index 4 >5 - down");
+                        section4_reset();
+                        $("#section5 .full_scroll").addClass("scroll_up");
+                    } else if (index == 5 && direction == 'up') {
+                        //console.log("onLeave: index 5 >4 - up");
+                        section5_reset();
+                    } else if (index == 5 && direction == 'down') {
+                        //console.log("onLeave: index 5 >6 - down");
+                    } else if (index == 6 && direction == 'up') {
+                        //console.log("onLeave: index 6 >5 - up");
+                        section6_reset();
+                    }
+                },
+                // ** 세컨 슬라이드 왔을대
+                afterSlideLoad: function (anchors, $main_page, $sub_page, $rl) {
+                    console.log("afterSlideLoad: ", anchors, $main_page, $sub_page, $rl);
+                    _pageMain = $main_page;
+                    _pageSub = $sub_page;
+                },
+                // ** 세컨 슬라이드 떠날때
+                onSlideLeave: function (anchors, $main_page, $sub_page, $rl) { }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

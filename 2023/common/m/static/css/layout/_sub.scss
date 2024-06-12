@@ -1,0 +1,14 @@
+.l_sub {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: vw(320px);
+    /*common*/
+    @keyframes loading {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}
