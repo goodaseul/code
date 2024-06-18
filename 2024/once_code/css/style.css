@@ -480,6 +480,10 @@ body.m_open {
   background-size: 100% auto;
 }
 
+nav {
+  background: greenyellow;
+}
+
 .header {
   position: fixed;
   z-index: 10;

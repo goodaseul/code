@@ -26,46 +26,46 @@ window.addEventListener("load", function () {
         }
     });
 
-    bg.addEventListener("mouseenter", function () {
-        header.classList.add("open");
-    });
-    bg.addEventListener("mouseleave", function () {
-        header.classList.remove("open");
-    });
+    // bg.addEventListener("mouseenter", function () {
+    //     header.classList.add("open");
+    // });
+    // bg.addEventListener("mouseleave", function () {
+    //     header.classList.remove("open");
+    // });
 
-    depth1.forEach(function (el, i) {
-        el.addEventListener("mouseenter", function () {
-            header.classList.add("open");
-        });
-        el.addEventListener("mouseleave", function () {
-            header.classList.remove("open");
-        });
-    });
+    // depth1.forEach(function (el, i) {
+    //     el.addEventListener("mouseenter", function () {
+    //         header.classList.add("open");
+    //     });
+    //     el.addEventListener("mouseleave", function () {
+    //         header.classList.remove("open");
+    //     });
+    // });
 
-    //mo
-    ham.addEventListener("click", function () {
-        if (moNav.classList.contains("open")) {
-            header.classList.remove("open");
-            moNav.classList.remove("open");
-            document.querySelector("body").classList.remove("m_open");
-        } else {
-            document.querySelector("body").classList.add("m_open");
-            header.classList.add("open");
-            moNav.classList.add("open");
-        }
-    });
+    // //mo
+    // ham.addEventListener("click", function () {
+    //     if (moNav.classList.contains("open")) {
+    //         header.classList.remove("open");
+    //         moNav.classList.remove("open");
+    //         document.querySelector("body").classList.remove("m_open");
+    //     } else {
+    //         document.querySelector("body").classList.add("m_open");
+    //         header.classList.add("open");
+    //         moNav.classList.add("open");
+    //     }
+    // });
 
-    // 모바일 헤더
-    depth1List = document.querySelectorAll(".ham_menu .depth1");
-    for (let i = 0; i < depth1List.length; i++) {
-        depth1List[i].onclick = function () {
-            if (this.lastElementChild.style.maxHeight) {
-                hidePanels();
-            } else {
-                showPanel(this);
-            }
-        };
-    }
+    // // 모바일 헤더
+    // depth1List = document.querySelectorAll(".ham_menu .depth1");
+    // for (let i = 0; i < depth1List.length; i++) {
+    //     depth1List[i].onclick = function () {
+    //         if (this.lastElementChild.style.maxHeight) {
+    //             hidePanels();
+    //         } else {
+    //             showPanel(this);
+    //         }
+    //     };
+    // }
 
     // 공통 스크롤 모션
     const controller = new ScrollMagic.Controller({});
@@ -130,26 +130,26 @@ function scrollActive() {
 }
 
 //marquee
-function Marquee(selector, speed, reverse) {
-    const parentSelector = document.querySelector(selector);
-    const firstElement = parentSelector.firstElementChild;
-    let i = 0;
+// function Marquee(selector, speed, reverse) {
+//     const parentSelector = document.querySelector(selector);
+//     const firstElement = parentSelector.firstElementChild;
+//     let i = 0;
 
-    if (reverse) parentSelector.classList.add("reverse");
+//     if (reverse) parentSelector.classList.add("reverse");
 
-    const moveItem = () => {
-        if (reverse) {
-            firstElement.style.marginRight = `-${i}px`;
-        } else {
-            firstElement.style.marginLeft = `-${i}px`;
-        }
-        if (i > firstElement.clientWidth) i = 0;
-        i += speed;
-        requestAnimationFrame(moveItem);
-    };
-    requestAnimationFrame(moveItem);
-}
+//     const moveItem = () => {
+//         if (reverse) {
+//             firstElement.style.marginRight = `-${i}px`;
+//         } else {
+//             firstElement.style.marginLeft = `-${i}px`;
+//         }
+//         if (i > firstElement.clientWidth) i = 0;
+//         i += speed;
+//         requestAnimationFrame(moveItem);
+//     };
+//     requestAnimationFrame(moveItem);
+// }
 
-window.addEventListener("load", function () {
-    Marquee(".marquee", 2, false);
-});
+// window.addEventListener("load", function () {
+//     Marquee(".marquee", 2, false);
+// });
