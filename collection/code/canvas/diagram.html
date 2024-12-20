@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diagram</title>
+    <link rel="stylesheet" href="/static/css/code/diagram.css">
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            헤더영역
+        </div>
+    </header>
+    <main class="l_sub l_sub_publication">
+        <section class="section">
+            <div class="inner">
+                <div class="reports">
+                    <div class="box">
+                        <div class="graph">
+                            <p class="sub_tit_s">2023년 수입</p>
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="graph">
+                            <p class="sub_tit_s">2023년 지출</p>
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner">
+            푸터영역
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx1 = document.getElementById('myChart1').getContext('2d');
+        const ctx2 = document.getElementById('myChart2').getContext('2d');
+        let gradient = ctx1.createLinearGradient(0, 0, 0, 400);
+        let gradient1_2 = ctx1.createLinearGradient(0, 0, 0, 400);
+        let gradient1_3 = ctx1.createLinearGradient(0, 0, 0, 400);
+
+        let gradient2 = ctx2.createLinearGradient(0, 0, 0, 400);
+        let gradient2_2 = ctx2.createLinearGradient(0, 0, 0, 400);
+
+        gradient.addColorStop(0.2, '#119A79');
+        gradient.addColorStop(1, '#16766A');
+
+
+        gradient1_2.addColorStop(0.2, 'rgba(17, 154, 121, .7)');
+        gradient1_2.addColorStop(0.7, 'rgba(22, 118, 106, 0.7)');
+
+        gradient1_3.addColorStop(0.2, 'rgba(17, 154, 121, .3)');
+        gradient1_3.addColorStop(0.7, 'rgba(22, 118, 106, 0.3)');
+
+        gradient2.addColorStop(0.2, 'rgba(202, 120, 73, 0.7)');
+        gradient2.addColorStop(1, 'rgba(188, 78, 65, 0.7)');
+
+        gradient2_2.addColorStop(0.2, 'rgba(202, 120, 73, 0.3)');
+        gradient2_2.addColorStop(1, 'rgba(188, 78, 65, 0.3)');
+
+
+        const myChart1 = new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3],
+                    backgroundColor: [
+                        gradient,
+                        gradient1_2,
+                        gradient1_3,
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+        const myChart2 = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3],
+                    backgroundColor: [
+                        '#BC4F41',
+                        gradient2,
+                        gradient2_2,
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+    </script>
+</body>
+
+</html>

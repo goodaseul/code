@@ -1,0 +1,24 @@
+.l_sub {
+    .section {
+        .inner {
+            .wrap_tab {
+                ul {
+                    li {
+                        background: transparent;
+                        &.active {
+                            background: darksalmon;
+                        }
+                    }
+                }
+            }
+            .wrap_contents {
+                .content {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

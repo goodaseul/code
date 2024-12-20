@@ -1,0 +1,280 @@
+@import "../style";
+
+main {
+    height: 100vw;
+}
+$area: 90px;
+
+.wrap_quick {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 9;
+    pointer-events: none;
+    > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        transform-origin: bottom;
+        transition: all 0.3s;
+        pointer-events: all;
+        li {
+            position: relative;
+            border-radius: 100%;
+            width: $area;
+            height: $area;
+            margin-bottom: 18px;
+            a {
+                position: relative;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                p {
+                    transition: all 0.2s;
+                    position: absolute;
+                    width: 55px;
+                    right: 90px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-align: center;
+                    pointer-events: none;
+                    opacity: 0;
+                }
+                img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: $area;
+                    height: $area;
+                    z-index: 2;
+                }
+            }
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: $area;
+                height: $area;
+                transition: all 0.3s;
+                background-color: #333;
+                box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.2));
+            }
+            &::before {
+                border-radius: 100%;
+            }
+            &::after {
+                z-index: 1;
+                opacity: 0;
+                border-radius: 60px;
+            }
+            &.quick {
+                &_chatbot {
+                    &::before,
+                    &::after {
+                        background-color: #fae100;
+                    }
+                }
+            }
+        }
+    }
+    .btns {
+        margin-left: auto;
+        box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.2));
+        background-color: #666;
+        position: relative;
+        border-radius: 100%;
+        width: $area;
+        height: $area;
+        pointer-events: all;
+        > * {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .induction {
+            opacity: 1;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .btn_plus {
+            transition: all 0.3s;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    &.on {
+        > ul {
+            transform: scaleY(0);
+        }
+        .btns {
+            .induction {
+                opacity: 0;
+                z-index: -1;
+            }
+            .btn_plus {
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    }
+    &.open {
+        pointer-events: all;
+        > ul {
+            transform: scale(1);
+        }
+        .btns {
+            .btn_plus {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &.fix {
+        position: absolute;
+        bottom: auto;
+
+        margin-top: -477px;
+    }
+}
+footer {
+    .btn_top {
+        background-color: #666;
+        position: absolute;
+        right: rem(40px);
+        top: 0;
+        transform: translateY(-50%);
+        width: $area;
+        height: $area;
+        box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.2));
+        border-radius: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
+    .wrap_quick {
+        .btns {
+            .btn_plus {
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+    footer {
+        .btn_top {
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrap_quick {
+        > ul {
+            li {
+                &:hover {
+                    width: 180px;
+                    &.quick {
+                        p:not(.induction) {
+                            opacity: 1;
+                        }
+                        &::before {
+                            display: none;
+                        }
+                        &::after {
+                            opacity: 1;
+                            width: 100%;
+                        }
+                        &_chatbot {
+                            p {
+                                color: #371d1e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    .wrap_quick {
+        .btns {
+            .btn_plus {
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    $area: rem(220px);
+    .wrap_quick {
+        right: rem(80px);
+        bottom: rem(80px);
+        > ul {
+            position: relative;
+            bottom: rem(250px);
+            li {
+                width: $area;
+                height: $area;
+                margin-bottom: rem(45px);
+                a {
+                    img {
+                        width: $area;
+                        height: $area;
+                    }
+                }
+                &::before,
+                &::after {
+                    width: $area;
+                    height: $area;
+                }
+                &::before {
+                    border-radius: 100%;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .btns {
+            width: $area;
+            height: $area;
+            bottom: rem(250px);
+        }
+        // &.fix {
+        //     margin-top: rem(-1170px);
+        // }
+
+        &.fix {
+            position: fixed;
+            bottom: rem(80px);
+            margin-top: 0;
+        }
+        .btn_top {
+            opacity: 0;
+            pointer-events: none;
+            background-color: #666;
+            position: absolute;
+            bottom: 0;
+            box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.2));
+            border-radius: 100%;
+            right: 0;
+            width: $area;
+            height: $area;
+        }
+        &.on {
+            .btn_top {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+}

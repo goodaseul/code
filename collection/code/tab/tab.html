@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/code/tab.css">
+
+</head>
+
+<body>
+    <main class="l_sub">
+        <section class="section">
+            <div class="inner">
+                <div class="wrap_tab">
+                    <ul>
+                        <li class="active">
+                            <a href="javascript:void(0);">
+                                tab1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                tab2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap_contents">
+                    <div class="content active">tabCont1</div>
+                    <div class="content">tabCont2</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/code/tab.js"></script>
+    <script>
+        let wrapTab = document.querySelectorAll(".wrap_tab ul li");
+        let wrapCont = document.querySelectorAll(".wrap_contents .content");
+        tabClick(wrapTab, wrapCont)
+    </script>
+</body>
+
+</html>

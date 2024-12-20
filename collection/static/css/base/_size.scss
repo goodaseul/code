@@ -1,0 +1,131 @@
+@import "./variable";
+
+//rem
+html {
+    font-size: 20px;
+    /** 데스크탑 */
+    $inner: 1480px;
+    $inner-space: 20px;
+    .inner {
+        width: $inner;
+        padding: 0 $inner-space;
+        margin: 0 auto;
+    }
+    .pc_cont {
+        display: block;
+    }
+
+    .tb_cont {
+        display: none;
+    }
+
+    .mo_cont {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    html {
+        $inner: 1240px;
+        .inner {
+            width: $inner;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 18px;
+
+        /** 타블렛 가로, 노트북 */
+        $inner: 960px;
+        .inner {
+            width: $inner;
+            margin: 0 auto;
+        }
+
+        .pc_cont {
+            display: block;
+        }
+
+        .tb_cont {
+            display: none;
+        }
+
+        .mo_cont {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    html {
+        /** 타블렛 가로, 노트북 */
+        $inner: auto;
+        .inner {
+            width: $inner;
+            margin: 0 auto;
+        }
+
+        .pc_cont {
+            display: block;
+        }
+
+        .tb_cont {
+            display: none;
+        }
+
+        .mo_cont {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+        /** 모바일 가로, 타블렛 세로 */
+        $inner-space: rem(80px);
+        .inner {
+            padding: 0 $inner-space;
+            margin: 0 auto;
+        }
+
+        .pc_cont {
+            display: none;
+        }
+
+        .tb_cont {
+            display: block;
+        }
+
+        .mo_cont {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+
+        /** 모바일 세로 */
+        .pc_cont {
+            display: none;
+        }
+
+        .tb_cont {
+            display: none;
+        }
+
+        .mo_cont {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 14px;
+    }
+}

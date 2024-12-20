@@ -1,0 +1,129 @@
+@import "../style";
+
+.l_sub {
+    &_publication {
+        .section {
+            .inner {
+                .swiper_mo {
+                    .swiper-wrapper {
+                        justify-content: center;
+                    }
+                    .swiper-slide {
+                        width: 270px;
+                        margin: 0 12px;
+                        .content {
+                            &::before {
+                                height: 406px;
+                            }
+                            .wrap_img {
+                                border: 1px solid #eee;
+                                border-radius: 16px;
+                                overflow: hidden;
+                            }
+                            .wrap_txt {
+                                padding-left: 20px;
+                                .cont_tit_s {
+                                    padding-top: 35px;
+                                    color: #333;
+                                    margin-bottom: 12px;
+                                }
+                                .sub_tit_s {
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .l_sub {
+        &_publication {
+            .section {
+                &::before {
+                    height: rem(1062px);
+                }
+                .inner {
+                    .swiper_mo {
+                        .swiper-wrapper {
+                            justify-content: flex-start;
+                        }
+                        .swiper-slide {
+                            width: rem(540px);
+                            opacity: 0.4;
+                            transition: opacity 0.4s;
+                            &-active {
+                                opacity: 1;
+                            }
+                            .content {
+                                &::before {
+                                    height: rem(808px);
+                                }
+                                .wrap_img {
+                                    border-radius: rem(32px);
+                                }
+                                .wrap_txt {
+                                    padding-left: rem(40px);
+                                    .cont_tit_s {
+                                        padding-top: rem(65px);
+                                        margin-bottom: rem(25px);
+                                    }
+                                    .sub_tit_s {
+                                        line-height: rem(95px);
+                                    }
+                                }
+                            }
+                        }
+                        //mo fraction + progress
+                        .wrap_progress {
+                            margin-top: rem(100px);
+                            display: flex !important;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            $area: rem(200px);
+                            .swiper-pagination_fraction {
+                                width: $area;
+                                font-size: rem(44px);
+                                font-weight: 500;
+                                display: flex;
+                                align-items: center;
+
+                                span {
+                                    margin: 0 rem(20px);
+                                    color: #707070;
+                                }
+                                .swiper-pagination-current {
+                                    font-weight: bold;
+                                    color: #333;
+                                }
+                                .swiper-pagination-total {
+                                    color: #666;
+                                }
+                            }
+                            .swiper-pagination-progressbar {
+                                width: calc(100% - #{$area}) !important;
+                                height: rem(6px);
+                                background-color: #ddd;
+                                border-radius: rem(64px);
+                                position: relative;
+                                z-index: 1;
+                                overflow: hidden;
+                                .swiper-pagination-progressbar-fill {
+                                    left: 0;
+                                    top: 0;
+                                    position: absolute;
+                                    border-radius: rem(32px);
+                                    background-color: #333;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.l_sub .section .inner .wrap_tab ul li {
+  background: transparent;
+}
+.l_sub .section .inner .wrap_tab ul li.active {
+  background: darksalmon;
+}
+.l_sub .section .inner .wrap_contents .content {
+  display: none;
+}
+.l_sub .section .inner .wrap_contents .content.active {
+  display: block;
+}

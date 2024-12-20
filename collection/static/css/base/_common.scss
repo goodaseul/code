@@ -1,0 +1,115 @@
+//example
+header {
+    background-color: #eee;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+main {
+    overflow: clip;
+    .section {
+        padding: 100px 0;
+        &_top {
+            background-color: $bg;
+        }
+        &_code {
+            .inner {
+                .wrap_codes {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .code {
+                        margin: 1% 0;
+                        padding: 1%;
+                        width: 49%;
+                        border: 3px solid #eee;
+                        h2 {
+                            margin-bottom: 5%;
+                        }
+                        ul {
+                            li {
+                                font-size: 16px;
+                                padding: 1%;
+
+                                .wrap_links {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    a {
+                                        display: block;
+                                        font-size: 14px;
+                                        margin-left: 1%;
+                                    }
+                                }
+                                p {
+                                    span {
+                                        margin-top: 1%;
+                                        font-size: 14px;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    background-color: #eee;
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        .section {
+            padding: 50px 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        .section {
+            padding: rem(200px) 0;
+
+            &_code {
+                .inner {
+                    .wrap_codes {
+                        display: block;
+                        .code {
+                            width: 100%;
+                            ul {
+                                li {
+                                    font-size: rem(48px);
+                                    p {
+                                        margin-right: auto;
+                                    }
+
+                                    .wrap_links {
+                                        a {
+                                            font-size: rem(40px);
+                                        }
+                                    }
+                                    p {
+                                        span {
+                                            font-size: rem(40px);
+                                        }
+                                    }
+                                }
+                            }
+                            + .code {
+                                margin-top: 3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

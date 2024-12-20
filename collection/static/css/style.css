@@ -1,0 +1,570 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: 400;
+  letter-spacing: -0.002em;
+  font-style: normal;
+  font-family: "Pretendard", sans-serif;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+main {
+  display: block;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+  font-family: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+}
+
+address {
+  font-style: initial;
+  color: inherit;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+em {
+  font-style: normal;
+}
+
+.btn {
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  text-align: center;
+  color: inherit;
+}
+
+.icon {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-indent: -9999%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#skipNav {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+#skipNav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+}
+#skipNav a:focus, #skipNav a:active {
+  transform: translateY(0);
+}
+
+html {
+  font-size: 20px;
+  /** 데스크탑 */
+}
+html .inner {
+  width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+html .pc_cont {
+  display: block;
+}
+html .tb_cont {
+  display: none;
+}
+html .mo_cont {
+  display: none;
+}
+
+@media screen and (max-width: 1480px) {
+  html .inner {
+    width: 1240px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 18px;
+    /** 타블렛 가로, 노트북 */
+  }
+  html .inner {
+    width: 960px;
+    margin: 0 auto;
+  }
+  html .pc_cont {
+    display: block;
+  }
+  html .tb_cont {
+    display: none;
+  }
+  html .mo_cont {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  html {
+    /** 타블렛 가로, 노트북 */
+  }
+  html .inner {
+    width: auto;
+    margin: 0 auto;
+  }
+  html .pc_cont {
+    display: block;
+  }
+  html .tb_cont {
+    display: none;
+  }
+  html .mo_cont {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+    /** 모바일 가로, 타블렛 세로 */
+  }
+  html .inner {
+    padding: 0 1.666rem;
+    margin: 0 auto;
+  }
+  html .pc_cont {
+    display: none;
+  }
+  html .tb_cont {
+    display: block;
+  }
+  html .mo_cont {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+    /** 모바일 세로 */
+  }
+  html .pc_cont {
+    display: none;
+  }
+  html .tb_cont {
+    display: none;
+  }
+  html .mo_cont {
+    display: block;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* Pretendard-100 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-Thin.ttf") format("woff2"), url("/static/fonts/Pretendard/Pretendard-Thin.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-Thin.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-300 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-Light.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-Light.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-Light.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-400 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-Regular.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-Regular.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-500 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-Medium.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-Medium.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-600 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-SemiBold.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-SemiBold.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-700 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-Bold.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-Bold.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* Pretendard-800 */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("/static/fonts/Pretendard/Pretendard-ExtraBold.woff2") format("woff2"), url("/static/fonts/Pretendard/Pretendard-ExtraBold.woff") format("woff"), url("/static/fonts/Pretendard/Pretendard-ExtraBold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+header {
+  background-color: #eee;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  overflow: clip;
+}
+main .section {
+  padding: 100px 0;
+}
+main .section_top {
+  background-color: #f5f5f5;
+}
+main .section_code .inner .wrap_codes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .section_code .inner .wrap_codes .code {
+  margin: 1% 0;
+  padding: 1%;
+  width: 49%;
+  border: 3px solid #eee;
+}
+main .section_code .inner .wrap_codes .code h2 {
+  margin-bottom: 5%;
+}
+main .section_code .inner .wrap_codes .code ul li {
+  font-size: 16px;
+  padding: 1%;
+}
+main .section_code .inner .wrap_codes .code ul li .wrap_links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .section_code .inner .wrap_codes .code ul li .wrap_links a {
+  display: block;
+  font-size: 14px;
+  margin-left: 1%;
+}
+main .section_code .inner .wrap_codes .code ul li p span {
+  margin-top: 1%;
+  font-size: 14px;
+  display: block;
+}
+
+footer {
+  background-color: #eee;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+  main .section {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .section {
+    padding: 4.166rem 0;
+  }
+  main .section_code .inner .wrap_codes {
+    display: block;
+  }
+  main .section_code .inner .wrap_codes .code {
+    width: 100%;
+  }
+  main .section_code .inner .wrap_codes .code ul li {
+    font-size: 1rem;
+  }
+  main .section_code .inner .wrap_codes .code ul li p {
+    margin-right: auto;
+  }
+  main .section_code .inner .wrap_codes .code ul li .wrap_links a {
+    font-size: 0.833rem;
+  }
+  main .section_code .inner .wrap_codes .code ul li p span {
+    font-size: 0.833rem;
+  }
+  main .section_code .inner .wrap_codes .code + .code {
+    margin-top: 3%;
+  }
+}
